@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Cody Berlin</title>
+		<link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
+		<style>
+			body { margin: 0; display: flex; align-items: center; justify-content: center }
+			canvas { width: 640px; height: 360px }
+			#aboutMeWrapper {
+				width: auto;
+				height: auto;
+				padding: 2rem 4rem;
+				background-color: white;
+				z-index: 9999;
+				position: absolute;
+				box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				flex-flow: column;
+			}
+			h1, h3, p {
+				font-family: 'Ropa Sans', sans-serif;
+				font-weight: lighter;
+				margin: 1rem;
+				font-size: 1.6vh;
+			}
+			h1 {
+				font-size: 3vh;
+				font-weight: bold;
+			}
+			.social-icon {
+				height: 3vh;
+				width:auto;
+				margin-left:1rem;
+				margin-right: 1rem;
+			}
+			.social-icon:hover {
+				cursor: pointer;
+			}
+			#socialWrapper {
+				margin: 1rem;
+			}
+			a {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="aboutMeWrapper">
+			<h1>Cody Berlin</h1>
+			<h3>Software Developer</h3>
+			<div id="socialWrapper">
+				<a href="https://linkedin.com/in/cgberlin" target="_blank">
+					<img src="linkedin.svg" class="social-icon" alt="linkedin"/>
+				</a>
+				<a href="https://github.com/cgberlin" target="_blank">
+					<img src="github.svg" class="social-icon" alt="github"/>
+				</a>
+			</div>
+			<h3>cody@codyberlin.com</h3>
+			<p>contact for portfolio</p>
+		</div>
+		<script src="three.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.4.0/Tween.min.js"></script>
+        <script src="https://threejs.org/examples/js/loaders/OBJLoader.js"></script>
+        <script src="https://unpkg.com/three@0.85.0/examples/js/libs/stats.min.js"></script>
+        <script src="https://unpkg.com/three@0.85.0/examples/js/controls/OrbitControls.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

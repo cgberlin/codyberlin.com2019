@@ -64,7 +64,7 @@
         scene.add(indiCube) 
         cubes.push(indiCube) 
         let dropT = new TWEEN.Tween(indiCube.position)
-        .to({ y: y }, 4000)
+        .to({ y: y }, x * 100)
         .easing(TWEEN.Easing.Cubic.InOut)
         .start() 
         rotateAndScale(indiCube)

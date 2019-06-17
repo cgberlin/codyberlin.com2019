@@ -59,10 +59,15 @@
         }) 
         let indiCube = new THREE.Mesh(cubeGeo, cubeMat) 
         indiCube.position.x = x 
-        indiCube.position.y = y 
+        indiCube.position.y = y + 35
         indiCube.position.z = z 
         scene.add(indiCube) 
         cubes.push(indiCube) 
+        let dropT = new TWEEN.Tween(indiCube.position)
+        .to({ y: y }, 4000)
+        .easing(TWEEN.Easing.Cubic.InOut)
+        .start() 
+        rotateAndScale(indiCube)
       }
     }
     directionalLight.position.set(
